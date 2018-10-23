@@ -18,11 +18,8 @@
         </activity>
         <activity android:name=".Sign_in" />
         <activity android:name=".Sign_up" />
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme" />
-        <activity android:name=".MenuViewHolder"></activity>
+        <activity android:name=".MenuViewHolder" />
+        <activity android:name=".HomeActivity"></activity>
     </application>
 
 </manifest>
