@@ -14,7 +14,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class HomeActivity extends AppCompatActivity {
-    RecyclerView recyclerView;
+   /* RecyclerView recyclerView;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
 
@@ -62,5 +62,5 @@ public class HomeActivity extends AppCompatActivity {
             }
         };
         recyclerView.setAdapter(firebaseRecyclerAdapter);
-    }
+    }*/
 }
