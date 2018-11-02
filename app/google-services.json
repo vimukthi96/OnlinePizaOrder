@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "276227917989",
+    "firebase_url": "https://online-order-c03f4.firebaseio.com",
+    "project_id": "online-order-c03f4",
+    "storage_bucket": "online-order-c03f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276227917989:android:059575db62ba1b8f",
+        "android_client_info": {
+          "package_name": "com.example.vimukthi.onlinepiza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276227917989-9jcg2qi39sb8dvgeb49dqo56h8oe173j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vimukthi.onlinepiza",
+            "certificate_hash": "a5c8e34ec8bf0ee7d8dd2c486e071e6a5f5c8166"
+          }
+        },
+        {
+          "client_id": "276227917989-12sjoubkklnc5ih8d4c98ll6h8grbtkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq75QiVW5DLU8lglDZhAmSreUK6o0SzXY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276227917989-12sjoubkklnc5ih8d4c98ll6h8grbtkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
