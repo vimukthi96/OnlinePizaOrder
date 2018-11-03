@@ -1,5 +1,6 @@
 package com.example.vimukthi.onlinepiza;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -58,6 +59,9 @@ public class FoodList extends AppCompatActivity {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
                         Toast.makeText(FoodList.this,""+clickItem.getName(),Toast.LENGTH_SHORT).show();
+                        Intent intent =new Intent(FoodList.this,FoodDetails.class);
+                        intent.putExtra("FoodId",firebaseRecyclerAdapter.getRef(position).getKey());
+                        startActivity(intent);
                     }
                 });
             }
