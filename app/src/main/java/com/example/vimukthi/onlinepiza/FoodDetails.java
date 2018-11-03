@@ -34,14 +34,14 @@ public class FoodDetails extends AppCompatActivity {
         setContentView(R.layout.activity_food_details);
         database=FirebaseDatabase.getInstance();
         foods=database.getReference("Food");
-/*
+
         numberButton=(ElegantNumberButton)findViewById(R.id.numberBtn);
         btnCart=(FloatingActionButton)findViewById(R.id.floatBtn);
 
         foodDescription=(TextView)findViewById(R.id.foodDescription);
         foodPrice=(TextView)findViewById(R.id.foodPrice);
         foodName=(TextView)findViewById(R.id.foodName);
-        foodImage=(ImageView) findViewById(R.id.foodImage);
+       foodImage=(ImageView) findViewById(R.id.imgFood);
 
         collapsingToolbarLayout=(CollapsingToolbarLayout)findViewById(R.id.collapsing);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppbar);
@@ -53,7 +53,7 @@ public class FoodDetails extends AppCompatActivity {
         if(!FoodId.isEmpty()){
             getDetailFood(FoodId);
 
-        }*/
+        }
     }
 
     private void getDetailFood(final String foodId) {

@@ -21,7 +21,7 @@
             android:fitsSystemWindows="true"
             app:collapsedTitleTextAppearance="@android:color/transparent"
             app:contentScrim="@android:color/black"
-            app:layout_scrollFlags="scroll|">
+            app:layout_scrollFlags="exitUntilCollapsed|scroll">
 
 
             <ImageView
