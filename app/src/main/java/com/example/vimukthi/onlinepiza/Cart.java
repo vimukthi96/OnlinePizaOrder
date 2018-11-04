@@ -59,6 +59,7 @@ public class Cart extends AppCompatActivity {
         btnPalce.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 showAleartDailog();
             }
         });
@@ -67,8 +68,11 @@ public class Cart extends AppCompatActivity {
         }
 
     private void showAleartDailog() {
-        AlertDialog.Builder alertDialog =new AlertDialog.Builder(Cart.this);
-        alertDialog.setTitle("One more step!..");
+        Toast.makeText(getApplicationContext(),"fdgdg",Toast.LENGTH_SHORT).show();
+        AlertDialog.Builder builder =new AlertDialog.Builder(this);
+        builder.setTitle("No internet connection");
+        builder.setMessage("Please turn on your network connection to continue.");
+       /* alertDialog.setTitle("One more step!..");
         alertDialog.setMessage("Enter your Address ..");
 
         final EditText edtAddress=new EditText(Cart.this);
@@ -101,7 +105,7 @@ public class Cart extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
             }
-        });
+        });*/
 
     }
 
