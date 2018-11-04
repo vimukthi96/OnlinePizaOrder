@@ -9,10 +9,9 @@ public class User {
     public User() {
     }
 
-    public User(String name, String passward ,String phone) {
+    public User(String name, String passward) {
         Name = name;
         Passward = passward;
-        Phone = phone;
     }
 
     public String getPhone() {

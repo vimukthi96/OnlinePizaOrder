@@ -49,7 +49,7 @@ public class Sign_up extends AppCompatActivity {
 
                         }else{
                             mDialog.dismiss();
-                            User user=new User(edtName.getText().toString(),edtPassward.getText().toString(),edtPhoneNumber.getText().toString());
+                            User user=new User(edtName.getText().toString(),edtPassward.getText().toString());
                             table_user.child(edtPhoneNumber.getText().toString()).setValue(user);
                             Toast.makeText(Sign_up.this,"Sign Up successful",Toast.LENGTH_SHORT).show();
                             finish();
