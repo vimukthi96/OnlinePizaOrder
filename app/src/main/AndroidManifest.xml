@@ -19,7 +19,6 @@
         <activity android:name=".Sign_in" />
         <activity android:name=".Sign_up" />
         <activity android:name=".MenuViewHolder" />
-        <activity android:name=".HomeActivity" />
         <activity
             android:name=".HomeActivity2"
             android:label="@string/title_activity_home2"

@@ -23,15 +23,18 @@ public class OrderStatus extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         database =FirebaseDatabase.getInstance();
         request =database.getReference("Requets");
 
-        recyclerView=(RecyclerView)findViewById(R.id.listOrders);
+        recyclerView=(RecyclerView)findViewById(R.id.listOrdersView);
         recyclerView.setHasFixedSize(true);
         layoutManager =new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
         loadOrders(Common.currentUser.getPhone());
+
+
     }
 
     private void loadOrders(String phone) {
@@ -39,28 +42,31 @@ public class OrderStatus extends AppCompatActivity {
                 Request.class,
                 R.layout.order_laypout,
                 OrderViewHolder.class,
-                request.orderByChild("phone").equalTo(phone)
+                request.orderByChild("phone")
+                .equalTo(phone)
         ) {
             @Override
             protected void populateViewHolder(OrderViewHolder viewHolder, Request model, int position) {
 
-                viewHolder.txtOrderId.setText(adapter.getRef(position).getKey());
-                viewHolder.txtOrderStatus.setText(convertCodeToStatus(model.getStatus()));
+        /*        viewHolder.txtOrderId.setText(adapter.getRef(position).getKey());
+            //    viewHolder.txtOrderStatus.setText(convertCodeToStatus(model.getStatus()));
                 viewHolder.txtOrderAddress.setText(model.getAddress());
-                viewHolder.txtOrderPhone.setText(model.getPhone());
+                viewHolder.txtOrderPhone.setText(model.getPhone());*/
             }
         };
         recyclerView.setAdapter(adapter);
-
     }
 
     private String convertCodeToStatus(String status) {
-        if (status.equals("0"))
+        if (status.equals("0")){
             return "placed" ;
-        else if(status.equals("1"))
+        }
+        else if(status.equals("1")) {
             return "on the way";
-        else
+        }
+        else {
             return "Shipped";
+        }
     }
 
 }
