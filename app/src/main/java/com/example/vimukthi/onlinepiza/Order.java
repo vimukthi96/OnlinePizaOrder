@@ -3,15 +3,15 @@ package com.example.vimukthi.onlinepiza;
 public class Order {
     private String ProductId;
     private String ProductName;
-    private String Price;
     private String Quantity;
+    private String Price;
     private String Discount;
 
     public Order(String productId, String productName, String quantity, String price, String discount) {
         ProductId = productId;
         ProductName = productName;
-        Price = price;
         Quantity = quantity;
+        Price = price;
         Discount = discount;
     }
 

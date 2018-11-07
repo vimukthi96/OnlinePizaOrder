@@ -1,15 +1,12 @@
 package com.example.vimukthi.onlinepiza;
 
-import android.app.DownloadManager;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.view.textclassifier.TextClassification;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -25,6 +22,9 @@ import java.util.List;
 import java.util.Locale;
 
 import info.hoang8f.widget.FButton;
+
+;
+
 
 public class Cart extends AppCompatActivity {
 
@@ -69,12 +69,11 @@ public class Cart extends AppCompatActivity {
 
     private void showAleartDailog() {
         Toast.makeText(getApplicationContext(),"fdgdg",Toast.LENGTH_SHORT).show();
-        AlertDialog.Builder builder =new AlertDialog.Builder(this);
-        builder.setTitle("No internet connection");
-        builder.setMessage("Please turn on your network connection to continue.");
-       /* alertDialog.setTitle("One more step!..");
+        final AlertDialog.Builder alertDialog =new AlertDialog.Builder(Cart.this);
+        alertDialog.setTitle("One more step!..");
         alertDialog.setMessage("Enter your Address ..");
 
+        //final String edtAddress="kjdhgdjkkldjhd";
         final EditText edtAddress=new EditText(Cart.this);
         LinearLayout.LayoutParams lp =new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
@@ -83,6 +82,7 @@ public class Cart extends AppCompatActivity {
         edtAddress.setLayoutParams(lp);
         alertDialog.setView(edtAddress);
         alertDialog.setIcon(R.drawable.ic_shopping_cart_black_24dp);
+
 
         alertDialog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
@@ -105,7 +105,8 @@ public class Cart extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int i) {
                 dialogInterface.dismiss();
             }
-        });*/
+        });
+        alertDialog.show();
 
     }
 
