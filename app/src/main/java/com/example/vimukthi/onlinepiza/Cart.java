@@ -68,7 +68,7 @@ public class Cart extends AppCompatActivity {
         }
 
     private void showAleartDailog() {
-        Toast.makeText(getApplicationContext(),"fdgdg",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getApplicationContext(),"fdgdg",Toast.LENGTH_SHORT).show();
         final AlertDialog.Builder alertDialog =new AlertDialog.Builder(Cart.this);
         alertDialog.setTitle("One more step!..");
         alertDialog.setMessage("Enter your Address ..");
