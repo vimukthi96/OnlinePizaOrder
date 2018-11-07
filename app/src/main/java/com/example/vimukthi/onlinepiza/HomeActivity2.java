@@ -144,12 +144,21 @@ public class HomeActivity2 extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_menu) {
-            // Handle the camera action
-        } else if (id == R.id.nav_cart) {
+        if (id == R.id.nav_logOut) {
+            Intent intent =new Intent(HomeActivity2.this,Sign_in.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
 
-            Toast.makeText(getApplicationContext(),"Cart",Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_order) {
+        } else if (id == R.id.nav_cart) {
+            Intent intent=new Intent(HomeActivity2.this,Cart.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_menu){
+
+        }
+        else if (id == R.id.nav_order) {
+            Intent intent=new Intent(HomeActivity2.this,OrderStatus.class);
+            startActivity(intent);
 
         }
 
